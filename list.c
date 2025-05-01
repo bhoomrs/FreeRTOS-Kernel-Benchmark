@@ -213,7 +213,6 @@ void vListInsert( List_t * const pxList,
 }
 /*-----------------------------------------------------------*/
 
-
 UBaseType_t uxListRemove( ListItem_t * const pxItemToRemove )
 {
     /* The list item knows which list it is in.  Obtain the list from the list
