@@ -65,9 +65,7 @@ target_compile_options(freertos_kernel PRIVATE
     $<$<COMPILE_LANG_AND_ID:C,Clang>:-Wno-covered-switch-default>
     $<$<COMPILE_LANG_AND_ID:C,Clang>:-Wno-cast-align> )
 
-add_executable(${PROJECT_NAME}
-    main.c
-)
+add_executable(${PROJECT_NAME} main.c)
 
 target_link_libraries(${PROJECT_NAME} freertos_kernel freertos_config)
 
